@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+
+<html>
+
+<title> Jewellery Clicker </title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="Style.css">
+
+<script src="Clicker.js"></script>
+
+</html>
+
+<body id="ClickerBody" onload="Welcome()" class="fade-in-one">
+
+    <center>
+
+        <button id="Logout" onclick="Logout()" class="btn btn-warning"> Log Out </button>
+
+        <b>
+
+            <i>
+
+                <h1 style="color: black;"> Jewellery Clicker </h1>
+
+            </i>
+
+        </b>
+
+        <b>
+
+            <i>
+
+                <h3 style="color: black;" id="shopname"> </h3>
+
+            </i>
+
+        </b>
+
+    </center>
+
+    <b>
+
+        <i>
+
+            <h5 style="color: black;"> Click The Diamond To earn Cash then buy workers </h3>
+
+        </i>
+
+    </b>
+
+    <div>
+
+        <img src="Diamond Clicker.png" onclick="AddMoney()" id="Clicker">
+
+        <div id="RunningOutOfNames">
+
+            <input class="form-control" id="Codes" placeholder="Enter Code">
+
+            <br>
+
+            <button class="btn btn-info" onclick="VerifyCode()" id="CodeRedeemer"> Redeem </button>
+
+        </div>
+
+    </div>
+
+    <br>
+
+    <br>
+
+    <br>
+
+    <b>
+
+        <i>
+
+            <label style="color: black;" id="TotalMoney"> Total Amount Of Money = 0 </label>
+
+        </i>
+
+    </b>
+
+    <br>
+
+    <br>
+
+    <br>
+
+    <center>
+
+    <div id="Workers">
+
+        <b>
+
+            <i>
+
+                <label style="color: black;"> Workers </label>
+
+            </i>
+
+        </b>
+
+    </div>
+
+    </center>
+
+    <div>
+
+        <img src="" alt="Cashier" id="Cashier" height="100" width="100">
+
+        <div id="WorkerChashier" class="col-lg-4 col-md-6 col-sm-6 col-xs-11">
+
+            <div id="CashierDiv">
+    
+                <label style="color: black;"> Cashier </label>
+    
+                <button class="btn btn-success" onclick="PurchaseCashier()" id="PurchaseCashier"> Purchase </button>
+    
+                <label style="color: black;"> Cost = 50 </label>
+    
+            </div>
+    
+        </div>
+
+    </div>
+
+    <br>
+
+    <br>
+
+    <div>
+
+        <img src="" alt="Banker" id="Banker" height="100" width="100">
+
+        <div id="WorkerBanker" class="col-lg-4 col-md-6 col-sm-6 col-xs-11">
+
+            <div id="BankerDiv">
+    
+                <label style="color: black;"> Banker </label>
+    
+                <button class="btn btn-success" onclick="PurchaseBanker()" id="PurchaseBanker"> Purchase </button>
+    
+                <label style="color: black;"> Cost = 1,000 </label>
+    
+            </div>
+    
+        </div>
+
+    </div>
+
+    <br>
+
+    <br>
+
+    <div>
+
+        <img src="" alt="SecurityGuard" id="SecurityGuard" height="100" width="100">
+
+        <div id="WorkerSecurityGuard">
+
+            <div>
+    
+                <label style="color: black;"> Security Guard </label>
+    
+                <button class="btn btn-success" onclick="PurchaseSecurityGuard()" id="PurchaseSecurityGuard"> Purchase </button>
+    
+                <label style="color: black;"> Cost = 1,500 </label>
+    
+            </div>
+    
+        </div>
+
+    </div>
+
+    <br>
+
+    <br>
+
+    <div>
+
+        <img src="" alt="SecurityDog" id="SecurityDog" height="100" width="100">
+
+        <div id="WorkerSecurityDog">
+
+            <div id="SecurityDogDiv">
+    
+                <label style="color: black;"> Security Dog </label>
+    
+                <button class="btn btn-success" onclick="PurchaseSecurityDog()" id="PurchaseSecurityDog"> Purchase </button>
+    
+                <label style="color: black;"> cost = 1,500 </label>
+    
+            </div>
+    
+        </div>
+
+    </div>
+
+    <br>
+
+    <br>
+
+    <div>
+
+        <img src="" alt="Model" id="Model" height="100" width="100">
+
+        <div id="WorkerModel">
+
+            <div>
+    
+                <label style="color: black;"> Model </label>
+    
+                <button class="btn btn-success" onclick="PurchaseModel()" id="PurchaseModel"> Purchase </button>
+    
+                <label style="color: black;"> Cost = 2,000 </label>
+    
+            </div>
+
+     </div>
+
+    </div>
+
+    <center>
+
+        <div id="PowerUps">
+    
+            <b>
+    
+                <i>
+    
+                    <label style="color: black;"> Power Up's </label>
+    
+                </i>
+    
+            </b>
+    
+        </div>
+    
+        <br>
+
+        <br>
+
+        </center>
+
+        <div>
+
+            <img src="" alt="DoubleClicker" id="DoubleClickerImg">
+
+            <div id="PowerUpDoubleClciker">
+
+                <div>
+
+                    <label style="color: black;"> Double Clicker </label>
+
+                    <button class="btn btn-success" onclick="PurchaseDoubleClicker()" id="DoubleClicker"> Purchase </button>
+
+                    <label style="color: black;"> Cost = 10,000 </label>
+
+                </div>
+
+            </div>
+
+        </div>
+
+</body>

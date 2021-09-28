@@ -1,0 +1,111 @@
+#ClickerBody {
+
+    background-image: linear-gradient(90deg, azure, teal);
+
+}
+
+img {
+
+    width: 250px;
+
+    height: 250px;
+
+}
+
+#Clicker:hover {
+
+    cursor: pointer;
+
+}
+
+#LoginBody {
+    
+    background-color: #485461;
+    
+    background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
+
+}
+
+.LoginArea {
+    
+	background: rgba(255, 255, 255, 0.8);
+
+	float: none;
+
+	border-radius: 15px;
+
+    padding: 20px;
+    
+}
+
+#LoginBtn {
+
+	width: 80%;
+
+	border-radius: 15px;
+
+}
+
+#WorkerChashier{
+
+    float: right;
+
+    justify-content: right;
+
+}
+
+#WorkerBanker{
+
+    float: right;
+
+    justify-content: right;
+
+}
+
+#WorkerSecurityDog{
+
+    float: right;
+
+    justify-content: right;
+
+}
+
+#WorkerSecurityGuard{
+
+    float: right;
+
+    justify-content: right;
+
+}
+
+#WorkerModel{
+
+    float: right;
+
+    justify-content: right;
+    
+}
+
+#Logout{
+
+    float: right;
+
+    justify-content: right;
+
+}
+
+#PowerUpDoubleClciker{
+
+    float: right;
+
+    justify-content: right;
+
+}
+
+#RunningOutOfNames{
+
+    float: right;
+
+    justify-content: right;
+
+}
